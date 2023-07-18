@@ -2,7 +2,7 @@
 word = "Holberton"
 word_first_3 = word[:3] 
 word_last_2 = word[7:]
-middle_word = word[-8:-1] #olberto
+middle_word = word[-8:-1]
 # YOUR CODE GOES HERE. PLEASE REMOVE THIS LINE
 print("First 3 letters: {}".format(word_first_3))
 print("Last 2 letters: {}".format(word_last_2))
