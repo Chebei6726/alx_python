@@ -6,5 +6,4 @@ def pow(a, b):
             result *= a
         a *= a
         b //= 2
-
     return result
