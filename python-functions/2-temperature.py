@@ -2,5 +2,10 @@
 def convert_to_celsius(fahrenheit):
     celsius = (fahrenheit - 32) * 5 / 9
     return celsius
-convert_to_celsius()
-print(convert_to_celsius)
+
+fahrenheit_input = float(input("Enter the temperature in Fahrenheit: "))
+
+# Call the function to convert Fahrenheit to Celsius
+celsius_temperature = convert_to_celsius(fahrenheit_input)
+
+print(f"{fahrenheit_input:.2f} degrees Fahrenheit is equal to {celsius_temperature:.2f} degrees Celsius.")
