@@ -4,6 +4,6 @@ from add_0 import add
 a=1
 b=2
 result= add(a,b)
-print(f"{a}+{b}={result}\n")
+print("{}+{}={}\n".format(a,b,result))
 if __name__ == '__main__':
     print("Code from add_0.py executed.")
