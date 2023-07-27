@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-import add_0
+from add_0 import add
+#define a and b
 a=1
 b=2
-
-print("{}+{}={}" .format(a,b,add_0))
+result=add(a,b)
+print(f"{a}+{b}={result}\n")
