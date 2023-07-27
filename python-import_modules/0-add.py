@@ -6,4 +6,4 @@ b=2
 result= add(a,b)
 print("{}+{}={}\n".format(a,b,result))
 if __name__ == '__main__':
-    print("Code from add_0.py executed.")
+    print()
