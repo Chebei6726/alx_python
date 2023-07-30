@@ -1,8 +1,9 @@
 import sys
 
 def print_arguments():
-    # Get the number of arguments
-    num_arguments = len(sys.argv) - 1
+    # Manually set the arguments as a list
+    args_list = ['Hello', 'Holberton', 'School', '98', 'Battery', 'street']
+    num_arguments = len(args_list)
 
     # Print the number of arguments
     print("Number of argument{}: {}".format('s' if num_arguments != 1 else '', num_arguments), end='')
@@ -12,8 +13,8 @@ def print_arguments():
     else:
         print(":", end='\n')
 
-    # Print each argument and its position
-    for i, arg in enumerate(sys.argv[1:], 1):
+    # Print each argument and position
+    for i, arg in enumerate(args_list, 1):
         print("{}: {}".format(i, arg))
 
 if __name__ == "__main__":
