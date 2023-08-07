@@ -1,17 +1,21 @@
 def square_matrix_simple(matrix=[]):
+    # Create a new matrix to store the squared values
     result_matrix = []
-
-    # Iterate through each row in the input matrix
     for row in matrix:
+        # Create a new row to store squared values for the current row
         squared_row = []
+
+        # Iterate through each element in the current row
         for element in row:
             # Square the element and append to the squared_row
             squared_row.append(element ** 2)
-            result_matrix.append(squared_row)
+
+        # Append the squared_row to the result_matrix
+        result_matrix.append(squared_row)
 
     return result_matrix
-#Test function
 
+# Test the function
 if __name__ == "__main__":
     matrix = [
         [1, 2, 3],
@@ -20,5 +24,10 @@ if __name__ == "__main__":
     ]
 
     new_matrix = square_matrix_simple(matrix)
-    print(new_matrix)
-    print(matrix)
+    
+    for row in new_matrix:
+        print(row)
+        
+    for row in matrix:
+        print(row)
+
